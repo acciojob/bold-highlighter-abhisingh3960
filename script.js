@@ -1,12 +1,14 @@
 function highlight() {
-    //Write your code here
+    let strongElements = document.querySelectorAll('p strong');
 
-
+    strongElements.forEach(strong => {
+        strong.style.color = 'green';
+    });
 }
 
-
 function return_normal() {
-    //Write your code here
-
-    
+    let strongElements = document.querySelectorAll('p strong');
+        strongElements.forEach(strong => {
+        strong.style.color = '';
+    });
 }
